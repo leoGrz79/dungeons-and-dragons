@@ -1,6 +1,6 @@
 import Race from './Race';
 
-export default class Orc extends Race {
+class Orc extends Race {
   private static _instances = 0;
   private _maxLifePoints: number;
   constructor(n: string, d: number) {
@@ -17,3 +17,5 @@ export default class Orc extends Race {
     return Orc._instances;
   }
 }
+
+export default Orc;
