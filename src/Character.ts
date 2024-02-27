@@ -1,11 +1,11 @@
 import Fighter from './Fighter';
 import Energy from './Energy';
 import getRandomInt from './utils';
-import Race, { Elf } from './Races';
+import fighterRace, { Elf } from './Races';
 import Archetype, { Mage } from './Archetypes';
 
 class Character implements Fighter {
-  private _race: Race;
+  private _race: fighterRace;
   private _archetype: Archetype;
   private _maxLifePoints: number;
   private _lifePoints: number;
@@ -28,7 +28,7 @@ class Character implements Fighter {
     };
   }
 
-  get race(): Race {
+  get race(): fighterRace {
     return this._race;
   }
 
