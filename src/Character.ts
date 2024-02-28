@@ -1,4 +1,4 @@
-import Fighter from './Fighter';
+import { Fighter } from './Fighter';
 import Energy from './Energy';
 import getRandomInt from './utils';
 import fighterRace, { Elf } from './Races';
